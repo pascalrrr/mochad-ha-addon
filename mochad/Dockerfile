@@ -7,9 +7,10 @@ WORKDIR /tmp
 RUN apk add --update --no-cache \
     git cmake make autoconf automake \
     libusb-dev gcc g++ && \
-    rm -rf /var/cache/apk /lib/apk/db
-RUN git clone https://github.com/sigmdel/mochad.git && \
-    cd mochad && mkdir build-scripts && aclocal && \
+    rm -rf /var/cache/apk /lib/apk/db && \
+    git clone https://github.com/sigmdel/mochad.git
+WORKDIR /tmp/mochad
+RUN mkdir build-scripts && aclocal && \
     automake --add-missing --copy && autoconf && \
     ./configure && make
 
