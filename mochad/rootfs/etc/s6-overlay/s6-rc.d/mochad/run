@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bashio
+#shellcheck shell=bash
+# ==============================================================================
+# Home Assistant Add-on: Mochad
+# Runs the Mochad server
+# ==============================================================================
+bashio::log.info "Starting Mochad..."
+
+# Start Mochad
+exec mochad -d

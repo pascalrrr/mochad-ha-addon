@@ -1,0 +1,24 @@
+---
+name: Mochad
+description: >-
+  Control X-10 ActiveHome and PowerHouse devices
+  in Home Assistant
+version: 0.0.2
+# image: ghcr.io/pascalrrr/mochad/{arch}
+slug: mochad
+init: false
+url: https://pascalrr.gay/redirect/mochad-github
+arch:
+  - amd64
+  - aarch64
+  - i386
+  - armv7
+
+# https://developers.home-assistant.io/docs/add-ons/configuration
+uart: true
+usb: true
+startup: services
+ports:
+  1099/tcp: null
+ports_description:
+  1099/tcp: Mochad TCP gateway
