@@ -25,7 +25,7 @@ As this is maintained by me, and me only, it won't be in the community repositor
 
 `Settings > Add-Ons > Add-on Store > (three dots) Repoistories`
 
-Once in the repositories dialog, enter <https://github.com/floridaman7588/mochad-ha-addon> and click **add**. Once it's added, click the three dots and click check for updates. Once the Add-on shows up, you can proceed to Installation.
+Once in the repositories dialog, enter <https://github.com/pascalrrr/hassio-addons> and click **add**. Once it's added, click the three dots and click check for updates. Once the Add-on shows up, you can proceed to Installation.
 
 ## Installation
 
